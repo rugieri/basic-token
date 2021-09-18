@@ -1,8 +1,8 @@
-#basic-token
+# basic-token
 
 ## A basic smart contract token example from book: ethereum-smart-contract-development-in-solidity-1st-ed
 
-###REMIX EXAMPLE PROJECT
+### REMIX EXAMPLE PROJECT
 
 Remix example project is present when Remix loads very first time or there are no files existing in the File Explorer.
 It contains 3 directories:
