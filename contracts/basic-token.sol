@@ -24,6 +24,16 @@ contract BasicToken {
     }    
     
     
-}   
+   
 
-
+const MyToken = artifacts.require('BasicToken');
+Describe ('BasicToken', accounts => {
+    it('has a total supply and a creator', async function () => {
+    const owner = accounts[0]
+    const myToken = await BasicToken.new({ from: owner })
+    const creator = await basicToken.creator()
+    const totalSupply = await basciToken.totalSupply()
+    assert(creator === owner)
+    assert(totalSupply.eq(10000))
+    })
+}
